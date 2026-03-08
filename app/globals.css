@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));  /* 👈 Add this line */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -22,5 +27,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Helvetica, sans-serif;
 }
