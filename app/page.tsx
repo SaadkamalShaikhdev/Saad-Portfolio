@@ -66,6 +66,23 @@ export default function Home() {
               </div><h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-3'>Fast Performance</h3>
               <p className='text-gray-600 dark:text-gray-400 leading-relaxed'>I optimize web applications for fast loading times and smooth user experiences.</p></div>
             </div>
+            <div className='bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-10 md:p-14 rounded-3xl border border-gray-200 dark:border-gray-700'>
+              <div className='flex md:justify-between flex-col md:flex-row'>
+                <div>
+
+                <h3 className='text-3xl font-black text-gray-900 dark:text-white mb-4'>
+                  My Journey
+                </h3>
+                <div className='w-20 h-1 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full'></div>
+                </div>
+                <div className='md:col-span-3 space-y-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed md:max-w-2/3 lg:max-w1/2'>
+                  <p>As a passionate full-stack developer, I transform ideas into reality through elegant code and intuitive design. My journey has been driven by curiosity and a desire to create meaningful digital experiences.</p>
+                  <p>Through hands-on project development, I've focused on modern web technologies and best practices. Each project is an opportunity to learn and push boundaries—from e-commerce platforms to real-time collaboration tools.</p>
+                  <p>I'm constantly learning and refining my craft. My portfolio showcases my ability to build full-stack applications from concept to deployment, and I'm excited to bring these skills to impactful projects and collaborative teams.</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
         </section>
