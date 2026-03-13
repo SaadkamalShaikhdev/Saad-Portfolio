@@ -66,8 +66,8 @@ export default function Home() {
               </div><h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-3'>Fast Performance</h3>
               <p className='text-gray-600 dark:text-gray-400 leading-relaxed'>I optimize web applications for fast loading times and smooth user experiences.</p></div>
             </div>
-            <div className='bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-10 md:p-14 rounded-3xl border border-gray-200 dark:border-gray-700'>
-              <div className='flex md:justify-between flex-col md:flex-row'>
+            <div className='bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 px-4 py-10 md:p-14 rounded-3xl border border-gray-200 dark:border-gray-700'>
+              <div className='flex md:justify-between flex-col md:flex-row gap-4'>
                 <div>
 
                 <h3 className='text-3xl font-black text-gray-900 dark:text-white mb-4'>
