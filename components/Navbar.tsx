@@ -34,11 +34,11 @@ const Navbar = () => {
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className='p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-teal-50 dark:hover:bg-teal-900/30 hover:text-teal-600 cursor-pointer dark:hover:text-teal-400 transition-all duration-300'
         >
-            {theme === 'dark' ? <Sun className="w-6 h-6 text-white" /> : <Moon className="w-6 h-6" />}
+            {theme === 'dark' ? <Sun className="w-6 h-6 text-white" /> : <Moon className="w-6 h-6 text-black" />}
         </button>
     </li>
     <button className='block md:hidden text-gray-700 dark:text-gray-300 p-2' onClick={()=>setShowSidebar(!showSidebar)}>
-        {showSidebar ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 text-black" />}
+        {showSidebar ? <X className="w-6 h-6 text-black dark:text-white" /> : <Menu className="w-6 h-6 text-black dark:text-white" />}
     </button>
     <li className='hidden md:block'>
         <a className='px-6 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl hover:scale-105 transition-all duration-300 font-semibold shadow-lg' href="#Contact">Contact</a>
