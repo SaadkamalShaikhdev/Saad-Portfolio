@@ -66,8 +66,8 @@ export default function Home() {
               </div><h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-3'>Fast Performance</h3>
               <p className='text-gray-600 dark:text-gray-400 leading-relaxed'>I optimize web applications for fast loading times and smooth user experiences.</p></div>
             </div>
-            <div className='bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-10 md:p-14 rounded-3xl border border-gray-200 dark:border-gray-700'>
-              <div className='flex md:justify-between flex-col md:flex-row'>
+            <div className='bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 px-4 py-10 md:p-14 rounded-3xl border border-gray-200 dark:border-gray-700'>
+              <div className='flex md:justify-between flex-col md:flex-row gap-4'>
                 <div>
 
                 <h3 className='text-3xl font-black text-gray-900 dark:text-white mb-4'>
@@ -86,8 +86,113 @@ export default function Home() {
           </div>
         </div>
         </section>
-        <section className='h-screen p-10' id='Skill'>Skills
-          <div>wc</div>
+        <section className='py-32 px-6 dark:bg-gray-900 transition-colors relative overflow-hidden' id='Skill'>
+          <div className='container mx-auto relative z-10'>
+            <div className='max-w-6xl mx-auto'>
+              <div className='mb-20'>
+                <h2 className='text-5xl md:text-6xl font-black text-gray-900 dark:text-white mb-6'>
+                  Skills &
+                  <br/>
+                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500'>Technology</span>
+                </h2>
+                <p className='text-xl text-gray-600 dark:text-gray-400 max-w-2xl'>A comprehensive toolkit for building modern, scalable web applications</p>
+              </div>
+              <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mb-8'>
+              <div className='md:col-span-2 md:row-span-2 bg-black rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Framework
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-3xl'>Next.Js</h3>
+                </div>
+              </div>
+              <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Library
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>React</h3>
+                </div>
+              </div>
+               <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Language
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>Typescript</h3>
+                </div>
+              </div>
+               <div className='lg:col-span-2 rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Runtime
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>Node.js</h3>
+                </div>
+              </div>
+              <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Database
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>MongoDB</h3>
+                </div>
+              </div>
+              <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Styling
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>Tailwind CSS</h3>
+                </div>
+              </div>
+              <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Architecture
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>REST APIs</h3>
+                </div>
+              </div>
+              <div className='rounded-2xl group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                <div className='flex flex-col h-full justify-between'>
+                  <div className='flex items-start justify-between mb-auto'>
+                  <span className='text-xs py-1 px-3 bg-teal-50 dark:bg-teal-900/30 rounded-b-full text-teal-600 dark:text-teal-400 font-semibold'>
+                    Validation
+                  </span>
+                  <div className='w-2 h-2 rounded-full bg-teal-500 group-hover:scale-150 transition-transform'></div>
+                  </div>
+                  <h3 className='font-black text-gray-900 dark:text-white mt-4 text-xl'>Next-Auth</h3>
+                </div>
+              </div>
+              <div className='h-20'>
+
+              </div>
+
+              </div>
+            </div>
+            </div>     
         </section>
       </div>
     </main>
