@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono,Poppins,Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 
 
@@ -34,6 +35,11 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+<<<<<<< HEAD
+=======
+        <Footer/>
+      </ThemeProvider>
+>>>>>>> 9234be6e6ffbccc18b2734e916db06dedbea37c5
       </body>
     </html>
   );
