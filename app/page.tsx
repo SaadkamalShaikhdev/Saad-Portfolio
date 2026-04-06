@@ -227,6 +227,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
+                {/* Add more skill cards as needed */}
               </ScrollReveal>
             </div>
             </div>     
