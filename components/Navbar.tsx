@@ -2,11 +2,9 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Moon , Sun, Menu,X} from 'lucide-react'
-import { useTheme } from 'next-themes';
 
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
@@ -31,10 +29,10 @@ const Navbar = () => {
     </li>
     <li>
         <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            
             className='p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-teal-50 dark:hover:bg-teal-900/30 hover:text-teal-600 cursor-pointer dark:hover:text-teal-400 transition-all duration-300'
         >
-            {theme === 'dark' ? <Sun className="w-6 h-6 text-white" /> : <Moon className="w-6 h-6 text-black" />}
+            <Sun className="w-6 h-6 text-white" />
         </button>
     </li>
     <button className='block md:hidden text-gray-700 dark:text-gray-300 p-2' onClick={()=>setShowSidebar(!showSidebar)}>
