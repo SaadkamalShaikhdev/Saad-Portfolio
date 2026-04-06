@@ -35,11 +35,6 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
-<<<<<<< HEAD
-=======
-        <Footer/>
-      </ThemeProvider>
->>>>>>> 9234be6e6ffbccc18b2734e916db06dedbea37c5
       </body>
     </html>
   );
