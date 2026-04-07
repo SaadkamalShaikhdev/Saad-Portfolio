@@ -1,11 +1,13 @@
 "use client"
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Moon , Sun, Menu,X} from 'lucide-react'
-
+import { Moon, Sun, Menu, X } from 'lucide-react'
+import { useTheme } from 'next-themes'
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const isDark = theme === 'dark' || (theme === 'system' && resolvedTheme === 'dark');
 
   return (
    <header className='fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors'>
@@ -17,7 +19,7 @@ const Navbar = () => {
   SK
 </Link>
 
-       <ul className='flex gap-10 items-center list-none'>
+       <ul className='flex gap-4 md:gap-10 items-center list-none'>
     <li className='hidden md:block'>
         <a className='text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors font-medium' href="#About">About</a>
     </li>
@@ -29,10 +31,11 @@ const Navbar = () => {
     </li>
     <li>
         <button
-            
+            type="button"
+            onClick={() => setTheme(isDark ? 'light' : 'dark')}
             className='p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-teal-50 dark:hover:bg-teal-900/30 hover:text-teal-600 cursor-pointer dark:hover:text-teal-400 transition-all duration-300'
         >
-            <Sun className="w-6 h-6 text-white" />
+            {isDark ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6 text-black" />}
         </button>
     </li>
     <button className='block md:hidden text-gray-700 dark:text-gray-300 p-2' onClick={()=>setShowSidebar(!showSidebar)}>

@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { Sparkles, Github, Linkedin, Mail,CodeXml,Laptop,Zap, ArrowUpRight,ExternalLink } from 'lucide-react';
+import { Sparkles, Github, Linkedin, Mail, CodeXml, Laptop, Zap, ArrowUpRight, ExternalLink, Phone, MapPin, Send } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 export default function Home() {
 const tags = ["Next.js", "JavaScript", "Resend", "MongoDB"];
@@ -478,8 +478,123 @@ const tags = ["Next.js", "JavaScript", "Resend", "MongoDB"];
     </div>
   </div>
                 </div></ScrollReveal>
+                <ScrollReveal delay={0.2}>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 md:mt-20">
+                  <div className='bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 text-center hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105'>
+                    <p className='text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500 mb-2'>
+                      10+
+                    </p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400 font-medium'>Projects Completed</p>
+                  </div>
+                  <div className='bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 text-center hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105'>
+                    <p className='text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500 mb-2'>
+                      15+
+                    </p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400 font-medium'>Technologies</p>
+                  </div>
+                  <div className='bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 text-center hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105'>
+                    <p className='text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500 mb-2'>
+                      100+
+                    </p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400 font-medium'>Git Commits</p>
+                  </div>
+                  <div className='bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 text-center hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105'>
+                    <p className='text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500 mb-2'>
+                      100%
+                    </p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400 font-medium'>Client satisfaction</p>
+                  </div>
+                </div>
+                </ScrollReveal>
                </div>
                 </div>
+        </section>
+        <section id="Contact" className='md:py-32 py-10 px-6 dark:bg-gray-900 transition-colors relative overflow-hidden'>
+          <div className='absolute top-1/2 left-0 w-96 h-96 bg-teal-500/10 dark:bg-teal-500/5 rounded-full blur-3xl'></div>
+          <div className="container mx-auto relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="md:mb-20 mb-10 text-center">
+            <h2 className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
+              Let's <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500" >Connect </span>
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Have a project in mind? I'd love to hear from you!</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
+              <div className="lg:col-span-2 space-y-6">
+                <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-6 md:p-8 rounded-3xl border border-gray-200 dark:border-gray-700">
+                  <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                    I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, I'll get back to you!
+                  </p>
+                  <div className="space-y-4">
+                    <a href="mailto:saadkamaldev@gmail.com" className="group flex items-center gap-4 p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300">
+                      <div className="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 rounded-xl flex items-center justify-center text-teal-600 dark:text-teal-400 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Mail size={22} className="text-teal-600 dark:text-teal-400" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Email</p>
+                        <span className="text-gray-900 dark:text-gray-200 font-semibold hover:text-teal-600 dark:hover:text-teal-400 transition-colors truncate block">
+                          saadkamaldev@gmail.com
+                        </span>
+                      </div>
+                      <ArrowUpRight size={18} className="text-gray-400 group-hover:text-teal-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                    <a href="tel:+923212563790" className="group flex items-center gap-4 p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300">
+                      <div className="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 rounded-xl flex items-center justify-center text-teal-600 dark:text-teal-400 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Phone size={22} className="text-teal-600 dark:text-teal-400" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Phone</p>
+                        <span className="text-gray-900 dark:text-gray-200 font-semibold hover:text-teal-600 dark:hover:text-teal-400 transition-colors truncate block">
+                          +923212563790
+                        </span>
+                      </div>
+                      <ArrowUpRight size={18} className="text-gray-400 group-hover:text-teal-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                    <div className="group flex items-center gap-4 p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300">
+                      <div className="w-14 h-14 bg-teal-50 dark:bg-teal-900/30 rounded-xl flex items-center justify-center text-teal-600 dark:text-teal-400 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <MapPin size={22} className="text-teal-600 dark:text-teal-400" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Location</p>
+                        <p className="text-gray-900 dark:text-gray-200 font-semibold">Orangi town ,Karachi</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-3">
+                <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 md:p-10 rounded-3xl border border-gray-200 dark:border-gray-700">
+                  <form className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Name</label>
+                        <input type="text" id="name" name="name" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="Your name" />
+                      </div>
+                      <div>
+                        <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Email</label>
+                        <input type="email" id="email" name="email" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="your.email@example.com" />
+                      </div>
+                    </div>
+                    <div>
+                      <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Subject</label>
+                      <input type="text" id="subject" name="subject" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="How can I help?" />
+                    </div>
+                    <div>
+                      <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Message</label>
+                      <textarea id="message" name="message" required rows={6} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none transition-all" placeholder="Tell me about your project..." />
+                    </div>
+                    <button type="submit" className="group w-full px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 font-semibold shadow-lg">
+                      <Send size={18} />
+                      <span>Send Message</span>
+                      <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </section>
       </div>
     </main>

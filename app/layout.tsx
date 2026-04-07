@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono,Poppins,Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import ThemeProvider from "@/components/ThemeProvider";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
@@ -33,8 +34,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Navbar/>
-        {children}
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
