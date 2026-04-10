@@ -22,6 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Saad kamal Portfolio",
   description: "A portfolio website showcasing the projects and skills of Saad Kamal, a passionate developer. Explore my work, experience, and contact information to learn more about my journey in the world of technology.",
+
 };
 
 export default function RootLayout({
@@ -43,3 +44,5 @@ export default function RootLayout({
     </html>
   );
 }
+// add a favicon to the website
+
