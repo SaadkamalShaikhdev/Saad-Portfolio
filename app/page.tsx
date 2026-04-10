@@ -2,8 +2,30 @@
 import Image from 'next/image';
 import { Sparkles, Github, Linkedin, Mail, CodeXml, Laptop, Zap, ArrowUpRight, ExternalLink, Phone, MapPin, Send } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import { useState } from 'react';
 export default function Home() {
 const tags = ["Next.js", "JavaScript", "Resend", "MongoDB"];
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [subject, setSubject] = useState('');
+const [message, setMessage] = useState('');
+
+const handleSend = async () => {
+  const res = await fetch('/api/sendmsg', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, message: message, subject })
+  });
+  if (res.ok) {
+    alert('Message sent successfully!');
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  } else {
+    alert('Failed to send message.');
+  }
+};
 
   return (
     <main>
@@ -565,31 +587,31 @@ const tags = ["Next.js", "JavaScript", "Resend", "MongoDB"];
               </div>
               <div className="lg:col-span-3">
                 <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 md:p-10 rounded-3xl border border-gray-200 dark:border-gray-700">
-                  <form className="space-y-6">
+                  <div className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Name</label>
-                        <input type="text" id="name" name="name" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="Your name" />
+                        <input type="text" id="name" name="name" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="Your name" />
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Email</label>
-                        <input type="email" id="email" name="email" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="your.email@example.com" />
+                        <input type="email" id="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="your.email@example.com" />
                       </div>
                     </div>
                     <div>
                       <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Subject</label>
-                      <input type="text" id="subject" name="subject" required className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="How can I help?" />
+                      <input type="text" id="subject" name="subject" required value={subject} onChange={(e) => setSubject(e.target.value)} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" placeholder="How can I help?" />
                     </div>
                     <div>
                       <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-semibold mb-3">Message</label>
-                      <textarea id="message" name="message" required rows={6} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none transition-all" placeholder="Tell me about your project..." />
+                      <textarea id="message" name="message" required rows={6} value={message} onChange={(e) => setMessage(e.target.value)} className="w-full px-5 py-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none transition-all" placeholder="Tell me about your project..." />
                     </div>
-                    <button type="submit" className="group w-full px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 font-semibold shadow-lg">
+                    <button onClick={handleSend} className="group w-full px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 font-semibold shadow-lg">
                       <Send size={18} />
                       <span>Send Message</span>
                       <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
