@@ -536,6 +536,7 @@ const handleSend = async () => {
           <div className='absolute top-1/2 left-0 w-96 h-96 bg-teal-500/10 dark:bg-teal-500/5 rounded-full blur-3xl'></div>
           <div className="container mx-auto relative z-10">
           <div className="max-w-6xl mx-auto">
+            <ScrollReveal delay={0.3}>
             <div className="md:mb-20 mb-10 text-center">
             <h2 className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
               Let's <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-500" >Connect </span>
@@ -615,6 +616,7 @@ const handleSend = async () => {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           </div>
           </div>
         </section>

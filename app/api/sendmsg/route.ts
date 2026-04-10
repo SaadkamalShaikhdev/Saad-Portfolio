@@ -3,7 +3,11 @@ import nodemailer from "nodemailer"
 
 export async function POST(request: Request) {
 
-const {email, subject, message} = await request.json();
+const {email, subject, message, name} = await request.json();
+
+if (!email || !subject || !message || !name) {
+  return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
+}
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -17,7 +21,9 @@ const mailOptions = {
   from: "saadkamaldev@gmail.com",
   to: "saadkamaldev@gmail.com",
   subject: subject,
-  text: `From: ${email}\nSubject: ${subject}\n\n${message}`
+  text: `From: ${email}\nSubject: ${subject  
+  }\n\n${name} sent you a message:\n
+  \n\n${message}`
 };
 
 try {
