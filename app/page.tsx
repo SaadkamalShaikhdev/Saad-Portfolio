@@ -431,7 +431,7 @@ const handleSend = async () => {
       {/* Image Side */}
       <div className="relative overflow-hidden h-52 sm:h-64 lg:h-full">
         <Image
-          src="/passOp.png"
+          src="/passopp.png"
           alt="Passworn Manager Platform"
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-700"
